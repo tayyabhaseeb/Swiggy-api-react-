@@ -1,13 +1,264 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.header-container {
+  /* border: 5px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid gray;
+}
+
+.header-logo {
+  width: 100px;
+  height: 100px;
+  margin-left: 10px;
+}
+
+.header-logo-container {
+  /* border: 1px solid green; */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.header-logo-container > a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-container > button {
+  margin-right: 10px;
+}
+
+.body-container {
+  padding: 0.5rem;
+}
+
+.cards-parent-container {
+  /* border: 2px solid green; */
+  width: 1100px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  /* border: 1px solid red; */
+  width: 300px;
+  margin: 1rem;
+  text-align: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-image {
+  width: 100%;
+  height: 250px;
+}
+
+.cusine {
+  font-size: 10px;
+}
+
+.card:hover {
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shimmer-effect {
+  width: 200px;
+  height: 200px;
+  background-color: #f6f7f8; /* Light gray background */
+  margin: 10px; /* Adjust margin as needed */
+  border-radius: 4px;
+  animation: shimmer-animation 1.5s infinite; /* Shimmer animation */
+}
+
+@keyframes shimmer-animation {
+  0% {
+    background-position: -200%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+.instamart-parent {
+  border: 3px solid black;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.restaurant-container {
+  /* border: 5px solid red; */
+  width: 800px;
+  margin: 0 auto;
+}
+
+.container-one {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 3rem;
+}
+
+.container-one > h2 {
+  text-align: center;
+}
+
+.rest-img {
+  width: 100%;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.container-two > h2 {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.container-two {
+  /* border: 4px solid green; */
+}
+
+.topCard {
+  /* border: 2px solid red; */
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: space-between;
+  /* border-bottom: 1px solid gray; */
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+  border-radius: 1rem;
+}
+
+.topCard-cont-one {
+  /* border: 1px solid blue; */
+  padding: 0.5rem;
+}
+
+.topCard-cont-two {
+  /* border: 1px solid purple; */
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.topCard-cont-two > img {
+  width: 150px;
+  height: 100px;
+}
+
+.topCard-cont-two > button {
+  position: absolute;
+  top: 5.5rem;
+  right: 1.5rem;
+}
+
+/* CSS */
+.button-56 {
+  align-items: center;
+  background-color: green;
+  border: 0.5px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-56:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform 0.2s ease-out;
+  z-index: -1;
+}
+
+.button-56:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-56:active {
+  background-color: blue;
+  outline: 0;
+}
+
+.button-56:hover {
+  outline: 0;
+}
+
+.footer {
+  position: fixed; /* Sticks the footer at the bottom */
+  bottom: 0;
+  width: 100%;
+  background-color: #222; /* Dark background */
+  color: #eee; /* Light text */
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+}
+.footer a {
+  color: #ffa500; /* Orange link color */
+  text-decoration: none; /* Removes underline from the link */
+  font-weight: bold; /* Bold font for the link */
+}
+.footer a:hover {
+  color: #ffd700; /* Slightly lighter color on hover */
+  text-decoration: underline; /* Adds underline on hover */
+}
+
+@media (min-width: 768px) {
+  .button-56 {
+    padding: 0 40px;
+  }
 }
